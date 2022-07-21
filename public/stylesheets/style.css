@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+	background-image: url("https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+	color: rgb(36, 36, 36);
+}
+
+h1 {
+	font-weight: 800;
+	padding: 60px 0 40px 0;
+	color: rgb(255, 255, 255)
+}
+
+a {
+	color: #e07efe;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+.table {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border: none;
+}
+
+thead {
+	border-top: none;
+}
+
+#flight-index {
+	width: 80%;
+}
+
+#add-flight {
+	width: 80%;
+}
+
+#new-flight-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 35%;
+	background-color: rgb(245, 245, 245);
+}
+
+#submit-new-flight {
+	margin: 10px 0 10px 0;
+}
+
+label,
+select,
+#form1 {
+	margin: 10px 0 10px 0;
+}
+
+.show-info {
+	margin: 15px;
+}
+
+section {
+	margin: 10px;
+}
+
+#add-destination {
+	background-color: rgb(245, 245, 245);
+	width: 95%;
+	padding: 15px;
+}
+
+#show-destinations {
+	width: 95%;
+}
+
+#show-flights-main {
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	height: 100vh;
+}
+
+aside {
+	background-color: rgb(245, 245, 245);
+	height: 100%;
+	display: grid;
+	grid-template-rows: 100px auto;
+}
+
+#flight-info-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#column-center {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#column-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 100%;
+}
+
+#tickets-table {
+	width: 95%;
+}
+
+#new-ticket-btn {
+	width: 95%;
+}
+
+#destination-btn,
+#flight-info-btn {
+	background-color: rgb(255, 156, 27);
+	border: none;
+}
+
+#destination-btn:hover,
+#flight-info-btn:hover {
+	background-color: rgb(231, 140, 21);
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	background-color: #157df6;
+}
+
+#tickets-header {
+	margin-top: 10px;
+}
+
+#ticket-create {
+	background-color: rgb(245, 245, 245);
+	padding: 20px;
+}
+
+.departed {
+	color: red;
+}
