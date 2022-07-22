@@ -63,26 +63,25 @@
                         <h2 id="tickets-header">Tickets <i class="fas fa-ticket-alt"></i></h2>
 
                         <form id = "ticket" action="/flights/<%= flight._id %>/tickets" method = "POST">
-                            <label>Seat No.</label>
-                            <input name="seat" required pattern="[A-F][1-9]\d?"><br>
+                            <label>Seat Number</label>
+                            <input name="seat" required pattern="[A-F][1-9]\d?">
             
                             <label>Price</label>
                             <input type="number" name="price"><br>
             
             
-                            <button type="submit">Add ticket!</button>
+                            <input type="submit" class="btn add-btn" id="add-btn" value="Add Ticket!">
                         </form>
+                        <table class="styled-table">
                             <thead>
-                                <th>
-                                    Seat
-                                </th>
-                                <br>
-                                <th>
-                                    Price
-                                </th>
-                            </thead>
-                            <% tickets.forEach(function(ticket) { %>
                                 <tr>
+                                <th> Seat</th>
+                                <th> Price </th>
+                                </tr>
+                            </thead>
+                        
+                            <% tickets.forEach(function(ticket) { %>
+                                <tr class="active-row">
                                      <td><%= ticket.seat %></td>
                                      <td><%= ticket.price %></td>
                                     <td>
