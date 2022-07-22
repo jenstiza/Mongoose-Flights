@@ -61,19 +61,30 @@
         </div>   
         <div id="column-right">
                         <h2 id="tickets-header">Tickets <i class="fas fa-ticket-alt"></i></h2>
-                        <table class="table" id="tickets-table">
+
+                        <form id = "ticket" action="/flights/<%= flight._id %>/tickets" method = "POST">
+                            <label>Seat No.</label>
+                            <input name="seat" required pattern="[A-F][1-9]\d?"><br>
+            
+                            <label>Price</label>
+                            <input type="number" name="price"><br>
+            
+            
+                            <button type="submit">Add ticket!</button>
+                        </form>
                             <thead>
                                 <th>
                                     Seat
                                 </th>
+                                <br>
                                 <th>
                                     Price
                                 </th>
                             </thead>
                             <% tickets.forEach(function(ticket) { %>
                                 <tr>
-                                    <td><%= ticket.seat %></td>
-                                    <td><%= ticket.price %></td>
+                                     <td><%= ticket.seat %></td>
+                                     <td><%= ticket.price %></td>
                                     <td>
                                         <form action="/tickets/<%= ticket._id %>?_method=DELETE" method="POST" id="delete-ticket">
                                                 <button type="submit" form="delete-ticket" class="btn btn-danger">Delete</button>
@@ -83,7 +94,7 @@
                             <% }) %>
                         </table>
                     
-                    <a href="/flights/<%= flight._id %>" class="btn btn-primary btn-lg btn-block" id="new-ticket-btn">Create a new ticket</a>
+                    
 </main>            
         </div>     
 <%- include('../partials/footer.ejs') %>

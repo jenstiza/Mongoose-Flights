@@ -6,17 +6,17 @@ body {
 	font-size: 14px;
 	font-family: 'Ubuntu', sans-serif;
 	background-image: url("https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
-	color: rgb(36, 36, 36);
+	color: rgb(8, 8, 8);
 }
 
 h1 {
 	font-weight: 800;
 	padding: 60px 0 40px 0;
-	color: rgb(255, 255, 255)
+	color: rgb(3, 251, 234)
 }
 
 a {
-	color: #e07efe;
+	color: #ffffff;
 }
 
 main {
@@ -29,12 +29,13 @@ main {
 
 .table {
 	color: rgb(0, 0, 0);
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(241, 241, 241, 0.612);
 	border: none;
 }
 
 thead {
 	border-top: none;
+	background-color: whitesmoke;
 }
 
 #flight-index {
@@ -61,7 +62,8 @@ thead {
 label,
 select,
 #form1 {
-	margin: 10px 0 10px 0;
+	margin: 20px 0 20px 0;
+	background-color: white;
 }
 
 .show-info {
@@ -115,23 +117,19 @@ aside {
 	height: 100%;
 }
 
-#tickets-table {
-	width: 95%;
-}
 
-#new-ticket-btn {
-	width: 95%;
-}
+
+
 
 #destination-btn,
 #flight-info-btn {
-	background-color: rgb(255, 156, 27);
+	background-color: rgb(0, 47, 255);
 	border: none;
 }
 
 #destination-btn:hover,
 #flight-info-btn:hover {
-	background-color: rgb(231, 140, 21);
+	background-color: rgb(255, 0, 247);
 }
 
 #page-container {
@@ -153,10 +151,11 @@ aside {
 
 #tickets-header {
 	margin-top: 10px;
+	color: rgb(0, 255, 251);
 }
 
 #ticket-create {
-	background-color: rgb(245, 245, 245);
+	background-color: rgba(255, 255, 255, 0);
 	padding: 20px;
 }
 
