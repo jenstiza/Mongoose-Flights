@@ -63,7 +63,7 @@ label,
 select,
 #form1 {
 	margin: 20px 0 20px 0;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .show-info {
@@ -91,7 +91,7 @@ section {
 }
 
 aside {
-	background-color: rgb(245, 245, 245);
+	background-color: rgba(255, 255, 255, 0.639);
 	height: 100%;
 	display: grid;
 	grid-template-rows: 100px auto;
@@ -107,6 +107,7 @@ aside {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	background-color: rgba(255, 255, 255, 0.639);
 }
 
 #column-right {
@@ -115,6 +116,7 @@ aside {
 	justify-content: flex-start;
 	align-items: flex-start;
 	height: 100%;
+	background-color: rgba(255, 255, 255, 0.639);
 }
 
 
